@@ -1,0 +1,65 @@
+.random-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.random-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 0.6rem;
+    text-decoration: none;
+    background: linear-gradient(35deg, #494949, #313131);
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    transform: scale(0.8);
+    border: none;
+    transition: all 3s !important;
+}
+
+.random-btn:hover {
+    background: linear-gradient(35deg, #494949, #555);
+}
+
+.svg {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.select-category {
+    background: none;
+    color: #fff;
+    font-family: "Poppins";
+    outline: none;
+    border: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.select-category:hover,
+.select-category:focus {
+    background: #fff;
+    color: #000;
+}
+
+.select-category option {
+    color: #000;
+}
+
+.select-category::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+.select-category::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.select-category::-webkit-scrollbar-thumb {
+    background-color: #222;
+}

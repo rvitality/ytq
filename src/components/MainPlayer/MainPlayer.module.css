@@ -1,0 +1,95 @@
+.player-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 70vh;
+}
+.player-container__main {
+    width: 60%;
+    height: 100%;
+}
+
+.play-video-heading {
+    margin-top: 5rem;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    z-index: 1;
+}
+
+.play-video-heading span {
+    z-index: -1;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #333;
+    width: 100%;
+}
+
+.icon {
+    font-size: 15rem;
+    position: absolute;
+    color: #333;
+}
+
+.icon:first-of-type {
+    font-size: 15rem;
+    left: 0%;
+    top: 10%;
+    transform: skewX(20deg);
+}
+
+/* yt icon */
+.icon:nth-of-type(2) {
+    left: 40%;
+    top: 70%;
+    font-size: 5rem;
+    transform: skew(20deg, -20deg);
+}
+
+.icon:last-of-type {
+    font-size: 18rem;
+    top: 35%;
+    right: 5%;
+    transform: skew(-20deg, 22deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .player-container__main {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .player-container {
+        height: 50vh;
+    }
+
+    .player-container__main {
+        width: 100%;
+    }
+
+    .player-container {
+        padding: 0 2rem;
+    }
+
+    .play-video-heading {
+        font-size: 3rem;
+    }
+
+    .play-video-heading span {
+        top: 20%;
+    }
+
+    .icon {
+        display: none;
+    }
+}
